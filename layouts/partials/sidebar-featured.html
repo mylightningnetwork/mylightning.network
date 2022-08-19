@@ -1,0 +1,43 @@
+<div class="sticky-top sticky-top-offset">
+  <h4 class="font-weight-bold spanborder"><span>Podcasts</span></h4>
+  <ol class="list-featured">
+    {{ $postsPodcast := where site.RegularPages "Section" "posts" }}
+    {{ $postsPodcast = where $postsPodcast "Params.category" "intersect" (slice "Podcast") }}
+    {{- range first 6 $postsPodcast }}
+      <li class="mb-4">
+        <span>
+          <h6 class="font-weight-bold">
+            <p class="text-dark">{{ .Title }}</p>
+          </h6>
+          <audio controls>
+            <source src="{{ .Params.audio_url }}" type="audio/mp3" />
+            Your browser does not support the audio element.
+          </audio>
+        </span>
+      </li>
+    {{ end -}}
+  </ol>
+  <p class="small text-center">
+    <a href="/category/podcast/">Show all episodes...</a>
+  </p>
+  <div class="gap"></div>
+  <div class="widget">
+    <h4 class="font-weight-bold spanborder">
+      <span>Youtube Videos</span>
+    </h4>
+    <iframe
+      width="350"
+      height="300"
+      src="https://www.youtube.com/embed/videoseries?list=PLlaN88a7y2_rosKX2WQt2VjFbjyDQXOkR"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <div class="btn-wrap">
+      <a href="{{ site.Params.youtube }}/playlists" target="_blank"
+        >Show all Videos</a
+      >
+    </div>
+  </div>
+</div>
