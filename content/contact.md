@@ -9,7 +9,6 @@ seo_keyword:
 thumbnail: "posts/example.jpg"
 slug: "contact"
 formspree: "mpzbpgww"
-
 ---
 
 <form action="https://formspree.io/f/{{< param formspree >}}" method="POST">

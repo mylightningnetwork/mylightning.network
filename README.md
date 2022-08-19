@@ -67,6 +67,6 @@ slug: "{{ lower .Name | urlize }}" (10)
 5. Set SEO META keyword
 6. Set thumbnail, value must be set, place image in "./static/assets/images/"
 7. Set audio URL (for Podcast category, other than Podcast set to "")
-8. Set post tags
-9. Set post category
+8. Set post tags, must be set at least 1 tag
+9. Set post category, must be set at least 1 category
 10. Set URL slug

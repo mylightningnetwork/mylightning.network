@@ -20,8 +20,9 @@ assetDir = "static/assets"
 [module]
 [module.hugoVersion]
 extended = true
-min = "0.94.2"
+min = "0.101.0"
 timeout = "300s"
+disableKinds = ["section"]
 
 # disqus
 disqusShortname = 'yourDisqusShortname'
