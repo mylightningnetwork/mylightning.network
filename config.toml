@@ -69,16 +69,21 @@ disqusShortname = 'yourDisqusShortname'
 # or relative path: /about
 
 [[menu.main]]
-name = "News"
-url = "/category/news"
+name = "About"
+url = "/about"
 weight = 1
+
+[[menu.main]]
+name = "News"
+url = "/"
+weight = 2
 
 [[menu.main]]
 name = "Lightning Free Markets"
 url = "/magazine"
-weight = 2
+weight = 3
 
 [[menu.main]]
-name = "Contact"
-url = "/contact"
-weight = 3
+name = "Game Theory"
+url = "/gametheory"
+weight = 4

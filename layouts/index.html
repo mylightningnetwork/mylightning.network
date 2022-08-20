@@ -1,6 +1,6 @@
 {{- define "main" }}
   <main role="main" class="site-content">
-    <div class="container">
+    <div class="container pt-5">
     <!-- Begin post excerpts, let's highlight the first 4 posts on top -->
     <div class="row remove-site-content-margin">
     {{- $paginator := .Paginate (where site.RegularPages "Section" "posts") -}}

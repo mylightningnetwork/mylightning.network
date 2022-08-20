@@ -5,11 +5,11 @@
       <div class="row">
         <div class="col-md-8 main-loop">
           <h4 class="font-weight-bold spanborder">
-            <span>All Magazine</span>
+            <span>Game Theory</span>
           </h4>
 
           <div class="row">
-            {{- $paginator := .Paginate (where (where site.RegularPages "Section" "posts") "Params.category" "intersect" (slice "Magazine")) -}}
+            {{- $paginator := .Paginate (where (where site.RegularPages "Section" "posts") "Params.category" "intersect" (slice "Game Theory")) -}}
             {{- range first 6 $paginator.Pages }}
               <a
                 class="col-6 cardloop mb-5"
@@ -35,7 +35,7 @@
               </a>
             {{- else }}
               <div class="my-5 ml-5">
-                <span>No Magazines</span>
+                <span>No Post</span>
               </div>
             {{ end -}}
             <div class="my-5">
@@ -84,13 +84,11 @@
       </div>
       <div class="gap"></div>
       <div class="row gutter-30">
-        {{ $postsMagazine := where site.RegularPages "Section" "posts" }}
-        {{ $postsMagazine = where $postsMagazine "Params.category" "intersect" (slice "Magazine") }}
-        {{- range first 3 $postsMagazine }}
+        {{ $postsGameTheory := where site.RegularPages "Section" "posts" }}
+        {{ $postsGameTheory = where $postsGameTheory "Params.category" "intersect" (slice "Game Theory") }}
+        {{- range first 3 $postsGameTheory }}
           <div class="col-md-4 cardloop">
-            <div
-              class="magazine-single"
-            >
+            <div class="magazine-single">
               {{ if .Params.thumbnail }}
                 <div class="magazine-thumb cardloop-img-wrapper">
                   <a href="{{ .Params.youtube_url }}" class="title">
