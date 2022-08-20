@@ -13,8 +13,9 @@ tags:
   - tags1
   - tags2
 category:
-  - Workshop
   - Podcast
+  - Game Theory
+  - News
 slug: "{{ lower .Name | urlize }}"
 ---
 
