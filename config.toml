@@ -79,7 +79,7 @@ url = "/"
 weight = 2
 
 [[menu.main]]
-name = "Lightning Free Markets"
+name = "Capital Markets"
 url = "/magazine"
 weight = 3
 
