@@ -92,6 +92,20 @@
         </div>
 
         <div class="col-md-12 col-lg-8">
+          {{- if .Params.youtube_url }}
+            <div class="d-flex justify-content-center align-items-center">
+              <iframe
+                class="mb-8"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/{{ index (last 1 (split .Params.youtube_url "/")) 0 }}"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          {{ end -}}
           {{- if .Params.audio_url }}
             <audio
               controls

@@ -49,14 +49,15 @@ seo_keyword: (5)
   - keyword1
   - keyword2
 thumbnail: "posts/example.jpg" (6)
-audio_url: "/assets/audios/file.mp3" (7)
-tags: (8)
+youtube_url: "https://www.youtube.com/watch?v=D0UnqGm_miA" (7)
+audio_url: "/assets/audios/file.mp3" (8)
+tags: (9)
   - tags1
   - tags2
-category: (9)
+category: (10)
   - Magazine
   - Podcast
-slug: "{{ lower .Name | urlize }}" (10)
+slug: "{{ lower .Name | urlize }}" (11)
 ---
 ```
 
@@ -66,7 +67,8 @@ slug: "{{ lower .Name | urlize }}" (10)
 4. Set SEO META description
 5. Set SEO META keyword
 6. Set thumbnail, value must be set, place image in "./static/assets/images/"
-7. Set audio URL (for Podcast category, other than Podcast set to "")
-8. Set post tags, must be set at least 1 tag
-9. Set post category, must be set at least 1 category
-10. Set URL slug
+7. Set youtube URL
+8. Set audio URL (for Podcast category, other than Podcast set to "")
+9. Set post tags, must be set at least 1 tag
+10. Set post category, must be set at least 1 category
+11. Set URL slug

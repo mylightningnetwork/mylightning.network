@@ -7,6 +7,7 @@ seo_keyword:
   - keyword1
   - keyword2
 thumbnail: "magazine/1.jpg"
+youtube_url: "https://www.youtube.com/watch?v=D0UnqGm_miA"
 audio_url: ""
 tags:
   - tags1
