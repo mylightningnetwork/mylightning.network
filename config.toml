@@ -1,0 +1,90 @@
+####################
+# hugo
+####################
+baseURL = "/"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+title = "myLightning.Network"
+summaryLength = 10
+RelativeURLs = false
+CanonifyURLs = true
+enableRobotsTXT = true
+enableEmoji = true
+paginate = 10
+enableGitInfo = true
+pygmentsCodefences = true
+pygmentsUseClasses = true
+disableHugoGeneratorInject = true
+theme = "lite"
+
+
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.101.0"
+timeout = "300s"
+disableKinds = ["section"]
+
+# disqus
+disqusShortname = 'yourDisqusShortname'
+
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+
+  [markup.goldmark.renderer]
+    hardWraps = true
+    unsafe    = true
+    xhtml     = true
+
+[taxonomies]
+  category = 'category'
+  tag = 'tags'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+####################
+# site params
+####################
+[params]
+  author = "RC"
+  author_pic = "/assets/images/avatar1.jpg"
+  author_bio = "Hi, I am RC, the curator of mylightning.network, explaining the money game ecosystem, rules and players involved. I hope you like it!"
+  site_name = "myLightning.Network"
+  #description = "Unlearning Money & Reporting Lightning Capital Markets and Insights"
+  motto = "Lightning Network Capital Markets Insights and Analytics"
+  locale = "en-US"
+  type = "website"
+  favicon = "favicon.png"
+
+  contact_url = "mailto:lightningnetwork.magazine@gmail.com"
+  #github = "https://github.com/mylightningnetwork"
+  twitter = "https://twitter.com/MylightningN"
+  youtube = "https://www.youtube.com/channel/UCdUIwB5dz3bSXujpT54jA6w"
+
+####################
+# navbar menu
+####################
+# url can be absolute URL: https://lnfreemarkets.com
+# or relative path: /about
+
+[[menu.main]]
+name = "WHO WE ARE"
+url = "/about"
+weight = 1
+
+[[menu.main]]
+name = "WHAT WE DO"
+url = "/whatwedo"
+weight = 2
+
+[[menu.main]]
+name = "CBDCs"
+url = "/gametheory"
+weight = 3
+
+[[menu.main]]
+name = "HOW TO JOIN NETWORK"
+url = "/join"
+weight = 4
